@@ -1,0 +1,24 @@
+<html>
+<head><title>Beatmap API</title></head>
+<body>
+<h1>Beatmap API</h1>
+<pre>
+Usage:
+                          /   Returns this page.
+                              
+              /[0-9a-f]{32}   Returns the beatmap or song folder json data with the given hash.
+                              Beatmaps always have the same hash. Song folders may differ.
+                              Song folder hashes can be retrieved through the given beatmap.
+                              
+      /[a-f0-9]{32}(/args)?   Returns the beatmap or song folder data with the given arguments.
+                              'args' can be any of the following
+                                     R - Raw data
+                              R/<path> - Raw data of a given file
+                                     A - Audio file
+                                     S - Storyboard file
+                              
+                              TODO
+                                     B - Background file
+</pre>
+</body>
+</html>
